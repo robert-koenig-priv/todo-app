@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import './App.css'
+import './bootstrap.css'
+// import SampleClassComponent from './components/learning-examples/SampleClassComponent'
+// import SampleFunctionComponent from './components/learning-examples/SampleFunctionComponent'
+// import Counter from './components/counter/Counter'
+import TodoApp from './components/todo/TodoApp'
 
-function App() {
-  return (
+class App extends Component {
+  render() {
+    return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <TodoApp/>
     </div>
   );
+  }
 }
+
 
 export default App;
