@@ -38,8 +38,8 @@ export class TodoComponent extends Component {
         let errors = {}
         if (!values.description) {
             errors.description = 'Enter a Description'
-        } else if (values.description.length < 5) {
-            errors.description = 'Enter at least 5 Characters in Description!'
+        } else if (values.description.length < 4) {
+            errors.description = 'Enter at least 4 Characters in Description!'
         }
 
         if (!moment(values.targetDate).isValid()) {
